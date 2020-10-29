@@ -7,3 +7,5 @@ To run any of the extension in this repo
 5. Switch on the extension 
 
 Enjoy 😄
+
+Here I have used manifest_version 2 because it is the latest version for making chromeExtension

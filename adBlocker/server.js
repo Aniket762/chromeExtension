@@ -25,3 +25,5 @@ blockers = [
     "*.//*.oiopublisher.com/*",
 
 ]
+
+// you can add the list of ad servers from which you don't ads

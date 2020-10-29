@@ -1,0 +1,10 @@
+{
+    "manifest_version":2,
+    "name": "wordRemover",
+    "version":"0.1.0",
+    "background":{
+        "matches":["<all_urls>"],
+        "scripts":["server.js"],
+        "css":["styles.css"]
+    }
+}
