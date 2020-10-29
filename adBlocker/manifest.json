@@ -1,0 +1,10 @@
+{
+    "name": "Aliferous AdBlocker",
+    "version":"0.1.0",
+    "description":"Chrome extension which blocks advertisements when plugged in",
+    "permissions":["webRequest","webRequestBlocking","<all_urls>"],
+    "background":{
+        "scripts" :["server.js"]
+    },
+    "manifest_version":2
+}
