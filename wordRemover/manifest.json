@@ -4,7 +4,7 @@
     "version":"0.1.0",
     "background":{
         "matches":["<all_urls>"],
-        "scripts":["server.js"],
-        "css":["styles.css"]
+        "scripts":["server.js"]
+        
     }
 }
