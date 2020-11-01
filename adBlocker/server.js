@@ -20,7 +20,7 @@ const blockers = [
 ]
 // you can add the list of ad servers from which you don't ads
 
-chrome.webRequest.onBeforeRequest.addListner(
+chrome.webRequest.onBeforeRequest.addListener(
     function(detils) {return {cancel:true}},
     {urls : blockers},
     ["blocking"]
