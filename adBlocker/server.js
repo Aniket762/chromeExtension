@@ -1,10 +1,4 @@
-chrome.webRequest.onBeforeRequest.addListner(
-    function(detils) {return {cancel:true}},
-    {urls : blockers},
-    ["blocking"]
-)
-
-blockers = [
+const blockers = [
     "*://*.doubkeclick.net/*",
     "*://*.zedo.com/*",
     "*://*.scorecardresearch.com/*",
@@ -16,14 +10,19 @@ blockers = [
     "*://*.googlesyndication.com/*",
     "*://*.partner.googleservices.com/*",
     "*://*.adzerk.com/*",
-    "*.//*.openx.com/*",
-    "*.//*.broadstreetads.com/*",
-    "*.//*.adcolt.com/*",
-    "*.//*.adbutler.com/*",
-    "*.//*.epom.com/*",
-    "*.//*.revive-adserver.com/*",
-    "*.//*.oiopublisher.com/*",
-
+    "*://*.openx.com/*",
+    "*://*.broadstreetads.com/*",
+    "*://*.adcolt.com/*",
+    "*://*.adbutler.com/*",
+    "*://*.epom.com/*",
+    "*://*.revive-adserver.com/*",
+    "*://*.oiopublisher.com/*",
 ]
-
 // you can add the list of ad servers from which you don't ads
+
+chrome.webRequest.onBeforeRequest.addListener(
+    function(detils) {return {cancel:true}},
+    {urls : blockers},
+    ["blocking"]
+)
+
